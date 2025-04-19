@@ -117,89 +117,161 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ShapeFactoryProject
+# Target rules for targets named VehicleFactoryProject
 
 # Build rule for target.
-ShapeFactoryProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ShapeFactoryProject
-.PHONY : ShapeFactoryProject
+VehicleFactoryProject: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VehicleFactoryProject
+.PHONY : VehicleFactoryProject
 
 # fast build rule for target.
-ShapeFactoryProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/build
-.PHONY : ShapeFactoryProject/fast
+VehicleFactoryProject/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/build
+.PHONY : VehicleFactoryProject/fast
 
-src/ShapeFactory.o: src/ShapeFactory.cpp.o
-.PHONY : src/ShapeFactory.o
-
-# target to build an object file
-src/ShapeFactory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/src/ShapeFactory.cpp.o
-.PHONY : src/ShapeFactory.cpp.o
-
-src/ShapeFactory.i: src/ShapeFactory.cpp.i
-.PHONY : src/ShapeFactory.i
-
-# target to preprocess a source file
-src/ShapeFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/src/ShapeFactory.cpp.i
-.PHONY : src/ShapeFactory.cpp.i
-
-src/ShapeFactory.s: src/ShapeFactory.cpp.s
-.PHONY : src/ShapeFactory.s
-
-# target to generate assembly for a file
-src/ShapeFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/src/ShapeFactory.cpp.s
-.PHONY : src/ShapeFactory.cpp.s
-
-src/run_shapes.o: src/run_shapes.cpp.o
-.PHONY : src/run_shapes.o
+src/Bike.o: src/Bike.cpp.o
+.PHONY : src/Bike.o
 
 # target to build an object file
-src/run_shapes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/src/run_shapes.cpp.o
-.PHONY : src/run_shapes.cpp.o
+src/Bike.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Bike.cpp.o
+.PHONY : src/Bike.cpp.o
 
-src/run_shapes.i: src/run_shapes.cpp.i
-.PHONY : src/run_shapes.i
+src/Bike.i: src/Bike.cpp.i
+.PHONY : src/Bike.i
 
 # target to preprocess a source file
-src/run_shapes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/src/run_shapes.cpp.i
-.PHONY : src/run_shapes.cpp.i
+src/Bike.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Bike.cpp.i
+.PHONY : src/Bike.cpp.i
 
-src/run_shapes.s: src/run_shapes.cpp.s
-.PHONY : src/run_shapes.s
+src/Bike.s: src/Bike.cpp.s
+.PHONY : src/Bike.s
 
 # target to generate assembly for a file
-src/run_shapes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/src/run_shapes.cpp.s
-.PHONY : src/run_shapes.cpp.s
+src/Bike.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Bike.cpp.s
+.PHONY : src/Bike.cpp.s
 
-test/ShapeFactoryTest.o: test/ShapeFactoryTest.cpp.o
-.PHONY : test/ShapeFactoryTest.o
+src/Car.o: src/Car.cpp.o
+.PHONY : src/Car.o
 
 # target to build an object file
-test/ShapeFactoryTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/test/ShapeFactoryTest.cpp.o
-.PHONY : test/ShapeFactoryTest.cpp.o
+src/Car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Car.cpp.o
+.PHONY : src/Car.cpp.o
 
-test/ShapeFactoryTest.i: test/ShapeFactoryTest.cpp.i
-.PHONY : test/ShapeFactoryTest.i
+src/Car.i: src/Car.cpp.i
+.PHONY : src/Car.i
 
 # target to preprocess a source file
-test/ShapeFactoryTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/test/ShapeFactoryTest.cpp.i
-.PHONY : test/ShapeFactoryTest.cpp.i
+src/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Car.cpp.i
+.PHONY : src/Car.cpp.i
 
-test/ShapeFactoryTest.s: test/ShapeFactoryTest.cpp.s
-.PHONY : test/ShapeFactoryTest.s
+src/Car.s: src/Car.cpp.s
+.PHONY : src/Car.s
 
 # target to generate assembly for a file
-test/ShapeFactoryTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShapeFactoryProject.dir/build.make CMakeFiles/ShapeFactoryProject.dir/test/ShapeFactoryTest.cpp.s
-.PHONY : test/ShapeFactoryTest.cpp.s
+src/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Car.cpp.s
+.PHONY : src/Car.cpp.s
+
+src/Truck.o: src/Truck.cpp.o
+.PHONY : src/Truck.o
+
+# target to build an object file
+src/Truck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Truck.cpp.o
+.PHONY : src/Truck.cpp.o
+
+src/Truck.i: src/Truck.cpp.i
+.PHONY : src/Truck.i
+
+# target to preprocess a source file
+src/Truck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Truck.cpp.i
+.PHONY : src/Truck.cpp.i
+
+src/Truck.s: src/Truck.cpp.s
+.PHONY : src/Truck.s
+
+# target to generate assembly for a file
+src/Truck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/Truck.cpp.s
+.PHONY : src/Truck.cpp.s
+
+src/VehicleFactory.o: src/VehicleFactory.cpp.o
+.PHONY : src/VehicleFactory.o
+
+# target to build an object file
+src/VehicleFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/VehicleFactory.cpp.o
+.PHONY : src/VehicleFactory.cpp.o
+
+src/VehicleFactory.i: src/VehicleFactory.cpp.i
+.PHONY : src/VehicleFactory.i
+
+# target to preprocess a source file
+src/VehicleFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/VehicleFactory.cpp.i
+.PHONY : src/VehicleFactory.cpp.i
+
+src/VehicleFactory.s: src/VehicleFactory.cpp.s
+.PHONY : src/VehicleFactory.s
+
+# target to generate assembly for a file
+src/VehicleFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/VehicleFactory.cpp.s
+.PHONY : src/VehicleFactory.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+test/VechicleFactoryTest.o: test/VechicleFactoryTest.cpp.o
+.PHONY : test/VechicleFactoryTest.o
+
+# target to build an object file
+test/VechicleFactoryTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/test/VechicleFactoryTest.cpp.o
+.PHONY : test/VechicleFactoryTest.cpp.o
+
+test/VechicleFactoryTest.i: test/VechicleFactoryTest.cpp.i
+.PHONY : test/VechicleFactoryTest.i
+
+# target to preprocess a source file
+test/VechicleFactoryTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/test/VechicleFactoryTest.cpp.i
+.PHONY : test/VechicleFactoryTest.cpp.i
+
+test/VechicleFactoryTest.s: test/VechicleFactoryTest.cpp.s
+.PHONY : test/VechicleFactoryTest.s
+
+# target to generate assembly for a file
+test/VechicleFactoryTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleFactoryProject.dir/build.make CMakeFiles/VehicleFactoryProject.dir/test/VechicleFactoryTest.cpp.s
+.PHONY : test/VechicleFactoryTest.cpp.s
 
 # Help Target
 help:
@@ -209,16 +281,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ShapeFactoryProject"
-	@echo "... src/ShapeFactory.o"
-	@echo "... src/ShapeFactory.i"
-	@echo "... src/ShapeFactory.s"
-	@echo "... src/run_shapes.o"
-	@echo "... src/run_shapes.i"
-	@echo "... src/run_shapes.s"
-	@echo "... test/ShapeFactoryTest.o"
-	@echo "... test/ShapeFactoryTest.i"
-	@echo "... test/ShapeFactoryTest.s"
+	@echo "... VehicleFactoryProject"
+	@echo "... src/Bike.o"
+	@echo "... src/Bike.i"
+	@echo "... src/Bike.s"
+	@echo "... src/Car.o"
+	@echo "... src/Car.i"
+	@echo "... src/Car.s"
+	@echo "... src/Truck.o"
+	@echo "... src/Truck.i"
+	@echo "... src/Truck.s"
+	@echo "... src/VehicleFactory.o"
+	@echo "... src/VehicleFactory.i"
+	@echo "... src/VehicleFactory.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... test/VechicleFactoryTest.o"
+	@echo "... test/VechicleFactoryTest.i"
+	@echo "... test/VechicleFactoryTest.s"
 .PHONY : help
 
 
