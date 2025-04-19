@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ShapeFactoryProject.dir/src/ShapeFactory.cpp.o CMakeFiles/ShapeFactoryProject.dir/src/run_shapes.cpp.o CMakeFiles/ShapeFactoryProject.dir/test/ShapeFactoryTest.cpp.o -o ShapeFactoryProject  /opt/homebrew/opt/googletest/lib/libgtest.a /opt/homebrew/opt/googletest/lib/libgtest_main.a
